@@ -1,0 +1,17 @@
+D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\bin\Debug\netcoreapp3.1\App-GIIS.exe
+D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\bin\Debug\netcoreapp3.1\App-GIIS.deps.json
+D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\bin\Debug\netcoreapp3.1\App-GIIS.runtimeconfig.json
+D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\bin\Debug\netcoreapp3.1\App-GIIS.runtimeconfig.dev.json
+D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\bin\Debug\netcoreapp3.1\App-GIIS.dll
+D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\bin\Debug\netcoreapp3.1\App-GIIS.pdb
+D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\obj\Debug\netcoreapp3.1\App-GIIS.csprojAssemblyReference.cache
+D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\obj\Debug\netcoreapp3.1\App_GIIS.FormMain.resources
+D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\obj\Debug\netcoreapp3.1\App-GIIS.csproj.GenerateResource.cache
+D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\obj\Debug\netcoreapp3.1\App-GIIS.AssemblyInfoInputs.cache
+D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\obj\Debug\netcoreapp3.1\App-GIIS.AssemblyInfo.cs
+D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\obj\Debug\netcoreapp3.1\App-GIIS.csproj.CoreCompileInputs.cache
+D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\obj\Debug\netcoreapp3.1\App-GIIS.dll
+D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\obj\Debug\netcoreapp3.1\App-GIIS.pdb
+D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\obj\Debug\netcoreapp3.1\App-GIIS.genruntimeconfig.cache
+D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\obj\Debug\netcoreapp3.1\App_GIIS.Properties.Resources.resources
+D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\obj\Debug\netcoreapp3.1\App_GIIS.FormFilteringImage.resources

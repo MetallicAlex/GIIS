@@ -12,6 +12,8 @@ namespace App_GIIS
 {
     public partial class FormMain : Form
     {
+        private bool dragMainForm = false;
+        private Point startPositionMainForm = new Point(0, 0);
         private Form activeForm = null;
         public FormMain()
         {
@@ -43,6 +45,41 @@ namespace App_GIIS
         private void buttonFilteringImage_Click(object sender, EventArgs e)
         {
             this.OpenChildForm(new FormFilteringImage());
+        }
+        #region functions of panel Header
+        private void panelHeader_MouseDown(object sender, MouseEventArgs e)
+        {
+            dragMainForm = true;
+            startPositionMainForm = new Point(e.X, e.Y);
+        }
+
+        private void panelHeader_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragMainForm)
+            {
+                Point point = PointToScreen(e.Location);
+                this.Location = new Point(point.X - startPositionMainForm.X, point.Y - startPositionMainForm.Y);
+            }
+        }
+
+        private void panelHeader_MouseUp(object sender, MouseEventArgs e)
+        {
+            dragMainForm = false;
+        }
+        #endregion
+
+        private void buttonMaxRestore_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+                buttonMaxRestore.BackgroundImage = Image.FromFile(@"../../../Data/Launcher/ButtonMaximize.png");
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
+                buttonMaxRestore.BackgroundImage = Image.FromFile(@"../../../Data/Launcher/ButtonRestore.png");
+            }
         }
     }
 }

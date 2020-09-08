@@ -81,5 +81,10 @@ namespace App_GIIS
                 buttonMaxRestore.BackgroundImage = Image.FromFile(@"../../../Data/Launcher/ButtonRestore.png");
             }
         }
+
+        private void buttonFindContours_Click(object sender, EventArgs e)
+        {
+            this.OpenChildForm(new FormFindContours());
+        }
     }
 }

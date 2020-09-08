@@ -4,6 +4,9 @@
     <Compile Update="FormFilteringImage.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormFindContours.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>

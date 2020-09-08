@@ -32,10 +32,11 @@
             this.panelHeader = new System.Windows.Forms.Panel();
             this.buttonMinimize = new System.Windows.Forms.Button();
             this.buttonMaxRestore = new System.Windows.Forms.Button();
-            this.Close = new System.Windows.Forms.Button();
+            this.buttonClose = new System.Windows.Forms.Button();
             this.pictureLogo = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.buttonFindContours = new System.Windows.Forms.Button();
             this.buttonFilteringImage = new System.Windows.Forms.Button();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.panelHeader.SuspendLayout();
@@ -49,7 +50,7 @@
             this.panelHeader.BackColor = System.Drawing.Color.Transparent;
             this.panelHeader.Controls.Add(this.buttonMinimize);
             this.panelHeader.Controls.Add(this.buttonMaxRestore);
-            this.panelHeader.Controls.Add(this.Close);
+            this.panelHeader.Controls.Add(this.buttonClose);
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
@@ -93,22 +94,22 @@
             this.buttonMaxRestore.UseVisualStyleBackColor = false;
             this.buttonMaxRestore.Click += new System.EventHandler(this.buttonMaxRestore_Click);
             // 
-            // Close
+            // buttonClose
             // 
-            this.Close.BackColor = System.Drawing.Color.Transparent;
-            this.Close.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Close.BackgroundImage")));
-            this.Close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Close.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Close.FlatAppearance.BorderSize = 0;
-            this.Close.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.Close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Close.Location = new System.Drawing.Point(1248, 0);
-            this.Close.Name = "Close";
-            this.Close.Size = new System.Drawing.Size(32, 32);
-            this.Close.TabIndex = 0;
-            this.Close.UseVisualStyleBackColor = false;
-            this.Close.Click += new System.EventHandler(this.Close_Click);
+            this.buttonClose.BackColor = System.Drawing.Color.Transparent;
+            this.buttonClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonClose.BackgroundImage")));
+            this.buttonClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonClose.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonClose.FlatAppearance.BorderSize = 0;
+            this.buttonClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.buttonClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClose.Location = new System.Drawing.Point(1248, 0);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(32, 32);
+            this.buttonClose.TabIndex = 0;
+            this.buttonClose.UseVisualStyleBackColor = false;
+            this.buttonClose.Click += new System.EventHandler(this.Close_Click);
             // 
             // pictureLogo
             // 
@@ -136,11 +137,30 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.buttonFindContours);
             this.panel3.Controls.Add(this.buttonFilteringImage);
             this.panel3.Location = new System.Drawing.Point(12, 203);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(238, 291);
             this.panel3.TabIndex = 0;
+            // 
+            // buttonFindContours
+            // 
+            this.buttonFindContours.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonFindContours.FlatAppearance.BorderSize = 0;
+            this.buttonFindContours.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
+            this.buttonFindContours.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
+            this.buttonFindContours.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonFindContours.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonFindContours.ForeColor = System.Drawing.Color.White;
+            this.buttonFindContours.Location = new System.Drawing.Point(0, 78);
+            this.buttonFindContours.Name = "buttonFindContours";
+            this.buttonFindContours.Size = new System.Drawing.Size(238, 78);
+            this.buttonFindContours.TabIndex = 0;
+            this.buttonFindContours.Text = "Выделение Контуров";
+            this.buttonFindContours.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonFindContours.UseVisualStyleBackColor = true;
+            this.buttonFindContours.Click += new System.EventHandler(this.buttonFindContours_Click);
             // 
             // buttonFilteringImage
             // 
@@ -198,11 +218,12 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button buttonFilteringImage;
-        private System.Windows.Forms.Button Close;
+        private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Button buttonMaxRestore;
         private System.Windows.Forms.Button buttonMinimize;
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.PictureBox pictureLogo;
+        private System.Windows.Forms.Button buttonFindContours;
     }
 }
 

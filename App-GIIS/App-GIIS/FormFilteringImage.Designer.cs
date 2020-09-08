@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFilteringImage));
             this.buttonClose = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonSave = new System.Windows.Forms.Button();
             this.buttonNoise = new System.Windows.Forms.Button();
             this.labelHeight = new System.Windows.Forms.Label();
             this.labelWidth = new System.Windows.Forms.Label();
@@ -74,6 +75,7 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.AutoScroll = true;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.buttonSave);
             this.panel1.Controls.Add(this.buttonNoise);
             this.panel1.Controls.Add(this.labelHeight);
             this.panel1.Controls.Add(this.labelWidth);
@@ -92,6 +94,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1030, 692);
             this.panel1.TabIndex = 2;
+            // 
+            // buttonSave
+            // 
+            this.buttonSave.BackColor = System.Drawing.Color.Indigo;
+            this.buttonSave.FlatAppearance.BorderSize = 0;
+            this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSave.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonSave.ForeColor = System.Drawing.Color.White;
+            this.buttonSave.Location = new System.Drawing.Point(374, 627);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(166, 39);
+            this.buttonSave.TabIndex = 4;
+            this.buttonSave.Text = "Сохранить";
+            this.buttonSave.UseVisualStyleBackColor = false;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // buttonNoise
             // 
@@ -202,11 +219,11 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(243, 570);
+            this.label1.Location = new System.Drawing.Point(139, 572);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(375, 27);
+            this.label1.Size = new System.Drawing.Size(30, 27);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Кол-во зашумленных пикселей";
+            this.label1.Text = "%";
             // 
             // numericUpDown1
             // 
@@ -216,7 +233,7 @@
             this.numericUpDown1.Location = new System.Drawing.Point(30, 572);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.numericUpDown1.Size = new System.Drawing.Size(207, 32);
+            this.numericUpDown1.Size = new System.Drawing.Size(103, 32);
             this.numericUpDown1.TabIndex = 2;
             this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDown1.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
@@ -298,5 +315,6 @@
         private System.Windows.Forms.Label labelWidth;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button buttonNoise;
+        private System.Windows.Forms.Button buttonSave;
     }
 }

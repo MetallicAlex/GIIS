@@ -46,6 +46,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonFindContours = new System.Windows.Forms.Button();
+            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.buttonOpenCV = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -58,6 +61,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonClose
@@ -115,7 +119,7 @@
             this.groupBox1.Controls.Add(this.numericUpDown1);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(12, 519);
+            this.groupBox1.Location = new System.Drawing.Point(246, 519);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(236, 161);
             this.groupBox1.TabIndex = 2;
@@ -142,6 +146,8 @@
             this.numericUpDown9.Name = "numericUpDown9";
             this.numericUpDown9.Size = new System.Drawing.Size(55, 28);
             this.numericUpDown9.TabIndex = 0;
+            this.numericUpDown9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown9.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             // 
             // numericUpDown8
             // 
@@ -163,6 +169,8 @@
             this.numericUpDown8.Name = "numericUpDown8";
             this.numericUpDown8.Size = new System.Drawing.Size(55, 28);
             this.numericUpDown8.TabIndex = 0;
+            this.numericUpDown8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown8.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             // 
             // numericUpDown7
             // 
@@ -184,6 +192,8 @@
             this.numericUpDown7.Name = "numericUpDown7";
             this.numericUpDown7.Size = new System.Drawing.Size(55, 28);
             this.numericUpDown7.TabIndex = 0;
+            this.numericUpDown7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown7.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             // 
             // numericUpDown6
             // 
@@ -205,6 +215,8 @@
             this.numericUpDown6.Name = "numericUpDown6";
             this.numericUpDown6.Size = new System.Drawing.Size(55, 28);
             this.numericUpDown6.TabIndex = 0;
+            this.numericUpDown6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown6.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             // 
             // numericUpDown5
             // 
@@ -226,6 +238,8 @@
             this.numericUpDown5.Name = "numericUpDown5";
             this.numericUpDown5.Size = new System.Drawing.Size(55, 28);
             this.numericUpDown5.TabIndex = 0;
+            this.numericUpDown5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown5.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             // 
             // numericUpDown4
             // 
@@ -247,6 +261,8 @@
             this.numericUpDown4.Name = "numericUpDown4";
             this.numericUpDown4.Size = new System.Drawing.Size(55, 28);
             this.numericUpDown4.TabIndex = 0;
+            this.numericUpDown4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown4.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             // 
             // numericUpDown3
             // 
@@ -268,6 +284,8 @@
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(55, 28);
             this.numericUpDown3.TabIndex = 0;
+            this.numericUpDown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown3.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             // 
             // numericUpDown2
             // 
@@ -289,6 +307,8 @@
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(55, 28);
             this.numericUpDown2.TabIndex = 0;
+            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown2.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             // 
             // numericUpDown1
             // 
@@ -310,6 +330,8 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(55, 28);
             this.numericUpDown1.TabIndex = 0;
+            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown1.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             // 
             // label1
             // 
@@ -343,9 +365,9 @@
             this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSave.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonSave.ForeColor = System.Drawing.Color.White;
-            this.buttonSave.Location = new System.Drawing.Point(263, 612);
+            this.buttonSave.Location = new System.Drawing.Point(499, 623);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(166, 67);
+            this.buttonSave.Size = new System.Drawing.Size(197, 48);
             this.buttonSave.TabIndex = 4;
             this.buttonSave.Text = "Сохранить Контуров";
             this.buttonSave.UseVisualStyleBackColor = false;
@@ -358,13 +380,63 @@
             this.buttonFindContours.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonFindContours.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonFindContours.ForeColor = System.Drawing.Color.White;
-            this.buttonFindContours.Location = new System.Drawing.Point(263, 539);
+            this.buttonFindContours.Location = new System.Drawing.Point(499, 569);
             this.buttonFindContours.Name = "buttonFindContours";
-            this.buttonFindContours.Size = new System.Drawing.Size(166, 67);
+            this.buttonFindContours.Size = new System.Drawing.Size(197, 48);
             this.buttonFindContours.TabIndex = 4;
             this.buttonFindContours.Text = "Найти Контуры";
             this.buttonFindContours.UseVisualStyleBackColor = false;
             this.buttonFindContours.Click += new System.EventHandler(this.buttonFindContours_Click);
+            // 
+            // numericUpDown10
+            // 
+            this.numericUpDown10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
+            this.numericUpDown10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown10.ForeColor = System.Drawing.Color.White;
+            this.numericUpDown10.Location = new System.Drawing.Point(499, 531);
+            this.numericUpDown10.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDown10.Name = "numericUpDown10";
+            this.numericUpDown10.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.numericUpDown10.Size = new System.Drawing.Size(103, 32);
+            this.numericUpDown10.TabIndex = 2;
+            this.numericUpDown10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown10.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
+            this.numericUpDown10.Value = new decimal(new int[] {
+            145,
+            0,
+            0,
+            0});
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(608, 529);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(82, 27);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Порог";
+            // 
+            // buttonOpenCV
+            // 
+            this.buttonOpenCV.BackColor = System.Drawing.Color.Indigo;
+            this.buttonOpenCV.FlatAppearance.BorderSize = 0;
+            this.buttonOpenCV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonOpenCV.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonOpenCV.ForeColor = System.Drawing.Color.White;
+            this.buttonOpenCV.Location = new System.Drawing.Point(702, 579);
+            this.buttonOpenCV.Name = "buttonOpenCV";
+            this.buttonOpenCV.Size = new System.Drawing.Size(197, 71);
+            this.buttonOpenCV.TabIndex = 4;
+            this.buttonOpenCV.Text = "OpenCV Найти Контуры";
+            this.buttonOpenCV.UseVisualStyleBackColor = false;
+            this.buttonOpenCV.Click += new System.EventHandler(this.buttonOpenCV_Click);
             // 
             // FormFindContours
             // 
@@ -372,6 +444,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(1030, 692);
+            this.Controls.Add(this.buttonOpenCV);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.numericUpDown10);
             this.Controls.Add(this.buttonFindContours);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.label2);
@@ -396,6 +471,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -420,5 +496,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button buttonFindContours;
+        private System.Windows.Forms.NumericUpDown numericUpDown10;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button buttonOpenCV;
     }
 }

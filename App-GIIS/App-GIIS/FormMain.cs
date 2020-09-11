@@ -34,6 +34,8 @@ namespace App_GIIS
         }
         private void Close_Click(object sender, EventArgs e)
         {
+            System.IO.File.Delete("../../../Data/test2.jpg");
+            System.IO.File.Delete("../../../Data/test.jpg");
             this.Close();
         }
 

@@ -34,8 +34,6 @@ namespace App_GIIS
         {
             graphics = this.CreateGraphics();
             SolidBrush brush = new SolidBrush(snowflake.Color);
-            //Pen pen = new Pen(snowflake.Color);
-            //graphics.DrawEllipse(pen, snowflake.Coordinate.X, snowflake.Coordinate.Y, snowflake.Size, snowflake.Size);
             graphics.FillEllipse(brush, snowflake.Coordinate.X, snowflake.Coordinate.Y, snowflake.Size, snowflake.Size);
         }
 

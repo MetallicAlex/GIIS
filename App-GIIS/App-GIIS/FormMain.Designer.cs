@@ -36,6 +36,7 @@
             this.pictureLogo = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.buttonBMP = new System.Windows.Forms.Button();
             this.buttonSnow = new System.Windows.Forms.Button();
             this.buttonFindContours = new System.Windows.Forms.Button();
             this.buttonFilteringImage = new System.Windows.Forms.Button();
@@ -138,13 +139,32 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.buttonBMP);
             this.panel3.Controls.Add(this.buttonSnow);
             this.panel3.Controls.Add(this.buttonFindContours);
             this.panel3.Controls.Add(this.buttonFilteringImage);
             this.panel3.Location = new System.Drawing.Point(12, 203);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(238, 291);
+            this.panel3.Size = new System.Drawing.Size(238, 329);
             this.panel3.TabIndex = 0;
+            // 
+            // buttonBMP
+            // 
+            this.buttonBMP.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonBMP.FlatAppearance.BorderSize = 0;
+            this.buttonBMP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
+            this.buttonBMP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
+            this.buttonBMP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBMP.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonBMP.ForeColor = System.Drawing.Color.White;
+            this.buttonBMP.Location = new System.Drawing.Point(0, 234);
+            this.buttonBMP.Name = "buttonBMP";
+            this.buttonBMP.Size = new System.Drawing.Size(238, 78);
+            this.buttonBMP.TabIndex = 0;
+            this.buttonBMP.Text = "Растягивание в ширину в M раз";
+            this.buttonBMP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBMP.UseVisualStyleBackColor = true;
+            this.buttonBMP.Click += new System.EventHandler(this.buttonBMP_Click);
             // 
             // buttonSnow
             // 
@@ -245,6 +265,7 @@
         private System.Windows.Forms.PictureBox pictureLogo;
         private System.Windows.Forms.Button buttonFindContours;
         private System.Windows.Forms.Button buttonSnow;
+        private System.Windows.Forms.Button buttonBMP;
     }
 }
 

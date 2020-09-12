@@ -93,5 +93,10 @@ namespace App_GIIS
         {
             this.OpenChildForm(new FormSnow());
         }
+
+        private void buttonBMP_Click(object sender, EventArgs e)
+        {
+            this.OpenChildForm(new FormBMP());
+        }
     }
 }

@@ -88,5 +88,10 @@ namespace App_GIIS
         {
             this.OpenChildForm(new FormFindContours());
         }
+
+        private void buttonSnow_Click(object sender, EventArgs e)
+        {
+            this.OpenChildForm(new FormSnow());
+        }
     }
 }

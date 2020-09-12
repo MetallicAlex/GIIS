@@ -36,6 +36,7 @@
             this.pictureLogo = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.buttonSnow = new System.Windows.Forms.Button();
             this.buttonFindContours = new System.Windows.Forms.Button();
             this.buttonFilteringImage = new System.Windows.Forms.Button();
             this.panelChildForm = new System.Windows.Forms.Panel();
@@ -137,12 +138,31 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.buttonSnow);
             this.panel3.Controls.Add(this.buttonFindContours);
             this.panel3.Controls.Add(this.buttonFilteringImage);
             this.panel3.Location = new System.Drawing.Point(12, 203);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(238, 291);
             this.panel3.TabIndex = 0;
+            // 
+            // buttonSnow
+            // 
+            this.buttonSnow.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonSnow.FlatAppearance.BorderSize = 0;
+            this.buttonSnow.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
+            this.buttonSnow.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
+            this.buttonSnow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSnow.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonSnow.ForeColor = System.Drawing.Color.White;
+            this.buttonSnow.Location = new System.Drawing.Point(0, 156);
+            this.buttonSnow.Name = "buttonSnow";
+            this.buttonSnow.Size = new System.Drawing.Size(238, 78);
+            this.buttonSnow.TabIndex = 0;
+            this.buttonSnow.Text = "Снег";
+            this.buttonSnow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonSnow.UseVisualStyleBackColor = true;
+            this.buttonSnow.Click += new System.EventHandler(this.buttonSnow_Click);
             // 
             // buttonFindContours
             // 
@@ -224,6 +244,7 @@
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.PictureBox pictureLogo;
         private System.Windows.Forms.Button buttonFindContours;
+        private System.Windows.Forms.Button buttonSnow;
     }
 }
 

@@ -16,3 +16,4 @@ D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\obj
 D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\obj\Debug\netcoreapp3.1\App_GIIS.Properties.Resources.resources
 D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\obj\Debug\netcoreapp3.1\App_GIIS.FormFilteringImage.resources
 D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\obj\Debug\netcoreapp3.1\App_GIIS.FormFindContours.resources
+D:\Work\Studies\Graphical Interface of Intelligent Systems\App-GIIS\App-GIIS\obj\Debug\netcoreapp3.1\App_GIIS.FormSnow.resources

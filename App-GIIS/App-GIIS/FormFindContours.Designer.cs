@@ -49,6 +49,10 @@
             this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonOpenCV = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -62,6 +66,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonClose
@@ -119,7 +124,7 @@
             this.groupBox1.Controls.Add(this.numericUpDown1);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(246, 519);
+            this.groupBox1.Location = new System.Drawing.Point(147, 519);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(236, 161);
             this.groupBox1.TabIndex = 2;
@@ -351,11 +356,11 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(709, 479);
+            this.label2.Location = new System.Drawing.Point(654, 479);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 21);
+            this.label2.Size = new System.Drawing.Size(190, 21);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Контуры";
+            this.label2.Text = "Выделенные контуры";
             this.label2.Visible = false;
             // 
             // buttonSave
@@ -365,11 +370,11 @@
             this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSave.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonSave.ForeColor = System.Drawing.Color.White;
-            this.buttonSave.Location = new System.Drawing.Point(499, 623);
+            this.buttonSave.Location = new System.Drawing.Point(586, 633);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(197, 48);
+            this.buttonSave.Size = new System.Drawing.Size(291, 43);
             this.buttonSave.TabIndex = 4;
-            this.buttonSave.Text = "Сохранить Контуров";
+            this.buttonSave.Text = "Сохранить Изображение";
             this.buttonSave.UseVisualStyleBackColor = false;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
@@ -380,11 +385,11 @@
             this.buttonFindContours.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonFindContours.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonFindContours.ForeColor = System.Drawing.Color.White;
-            this.buttonFindContours.Location = new System.Drawing.Point(499, 569);
+            this.buttonFindContours.Location = new System.Drawing.Point(586, 537);
             this.buttonFindContours.Name = "buttonFindContours";
-            this.buttonFindContours.Size = new System.Drawing.Size(197, 48);
+            this.buttonFindContours.Size = new System.Drawing.Size(291, 41);
             this.buttonFindContours.TabIndex = 4;
-            this.buttonFindContours.Text = "Найти Контуры";
+            this.buttonFindContours.Text = "Выделение Контуров";
             this.buttonFindContours.UseVisualStyleBackColor = false;
             this.buttonFindContours.Click += new System.EventHandler(this.buttonFindContours_Click);
             // 
@@ -393,7 +398,7 @@
             this.numericUpDown10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
             this.numericUpDown10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.numericUpDown10.ForeColor = System.Drawing.Color.White;
-            this.numericUpDown10.Location = new System.Drawing.Point(499, 531);
+            this.numericUpDown10.Location = new System.Drawing.Point(389, 531);
             this.numericUpDown10.Maximum = new decimal(new int[] {
             255,
             0,
@@ -417,7 +422,7 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(608, 529);
+            this.label3.Location = new System.Drawing.Point(498, 531);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 27);
             this.label3.TabIndex = 3;
@@ -430,13 +435,63 @@
             this.buttonOpenCV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOpenCV.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonOpenCV.ForeColor = System.Drawing.Color.White;
-            this.buttonOpenCV.Location = new System.Drawing.Point(702, 579);
+            this.buttonOpenCV.Location = new System.Drawing.Point(586, 584);
             this.buttonOpenCV.Name = "buttonOpenCV";
-            this.buttonOpenCV.Size = new System.Drawing.Size(197, 71);
+            this.buttonOpenCV.Size = new System.Drawing.Size(291, 43);
             this.buttonOpenCV.TabIndex = 4;
-            this.buttonOpenCV.Text = "OpenCV Найти Контуры";
+            this.buttonOpenCV.Text = "Выделение Контуров (OpenCV)";
             this.buttonOpenCV.UseVisualStyleBackColor = false;
             this.buttonOpenCV.Click += new System.EventHandler(this.buttonOpenCV_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.radioButton3);
+            this.groupBox2.Controls.Add(this.radioButton2);
+            this.groupBox2.Controls.Add(this.radioButton1);
+            this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
+            this.groupBox2.Location = new System.Drawing.Point(389, 569);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.groupBox2.Size = new System.Drawing.Size(191, 111);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Собель";
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(7, 82);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(75, 25);
+            this.radioButton3.TabIndex = 0;
+            this.radioButton3.Text = "sobel";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(7, 51);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(92, 25);
+            this.radioButton2.TabIndex = 0;
+            this.radioButton2.Text = "sobel_y";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.Location = new System.Drawing.Point(7, 20);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(92, 25);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "sobel_x";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
             // 
             // FormFindContours
             // 
@@ -444,6 +499,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(17)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(1030, 692);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.buttonOpenCV);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.numericUpDown10);
@@ -472,6 +528,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -499,5 +557,9 @@
         private System.Windows.Forms.NumericUpDown numericUpDown10;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button buttonOpenCV;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }

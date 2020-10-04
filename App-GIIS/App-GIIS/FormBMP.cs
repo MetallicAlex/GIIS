@@ -80,7 +80,6 @@ namespace App_GIIS
                     graphics.DrawImage(image, destRect, 0, 0, image.Width, image.Height, GraphicsUnit.Pixel, wrapMode);
                 }
             }
-
             return destImage;
         }
 
@@ -88,7 +87,8 @@ namespace App_GIIS
         {
             if(saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                pictureBox1.Image.Save(saveFileDialog1.OpenFile(), ImageFormat.Bmp);
+                pictureBox1.Image.Save(saveFileDialog1.FileName, ImageFormat.Bmp);
+                MessageBox.Show("Изображение сохранено", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

@@ -13,6 +13,7 @@ namespace App_GIIS
     public partial class FormFindContours : Form
     {
         private Bitmap bitmap;
+        private string sobel = "sobel_x";
         public FormFindContours()
         {
             InitializeComponent();
@@ -57,7 +58,12 @@ namespace App_GIIS
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            pictureBox2.Image.Save(@"../../../Data/Contours.png", ImageFormat.Png);
+            if (pictureBox2.Image != null)
+            {
+                var image = new Bitmap(pictureBox2.Image);
+                image.Save(@"../../../Data/Contours.png");
+                //pictureBox2.Image.Save(@"../../../Data/Contours", ImageFormat.Png);
+            }
         }
 
         private void buttonFindContours_Click(object sender, EventArgs e)
@@ -73,13 +79,18 @@ namespace App_GIIS
                 numericUpDown8.Value.ToString() + "," +
                 numericUpDown9.Value.ToString();
             string strCmdText;
-            strCmdText = "/K python ../../../Data/convolve.py --image ../../../Data/test.jpg -o ../../../Data/test2.jpg --kernel " + kernel;
+            strCmdText = "/K python ../../../Data/Scripts/convolve.py --image ../../../Data/test.jpg -o ../../../Data/test2.jpg --kernel " + kernel + " --threshold " + numericUpDown10.Value.ToString();
             System.Diagnostics.Process process = new System.Diagnostics.Process();
             process.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            process.StartInfo.RedirectStandardInput = true;
             process.StartInfo.FileName = "CMD.exe";
-            process.StartInfo.Arguments = strCmdText;
+            process.StartInfo.ArgumentList.Add(strCmdText);
             process.Start();
+            process.StandardInput.WriteLine("exit");
+            process.StandardInput.Flush();
+            process.StandardInput.Close();
             process.WaitForExit();
+            process.Close();
             while (true)
             {
                 if (File.Exists("../../../Data/test2.jpg"))
@@ -121,23 +132,19 @@ namespace App_GIIS
         private void buttonOpenCV_Click(object sender, EventArgs e)
         {
             pictureBox1.Image.Save("../../../Data/test.jpg");
-            string kernel = numericUpDown1.Value.ToString() + "," +
-                numericUpDown2.Value.ToString() + "," +
-                numericUpDown3.Value.ToString() + "," +
-                numericUpDown4.Value.ToString() + "," +
-                numericUpDown5.Value.ToString() + "," +
-                numericUpDown6.Value.ToString() + "," +
-                numericUpDown7.Value.ToString() + "," +
-                numericUpDown8.Value.ToString() + "," +
-                numericUpDown9.Value.ToString();
             string strCmdText;
-            strCmdText = "/K python ../../../Data/find_contours.py --image ../../../Data/test.jpg -o ../../../Data/test2.jpg --kernel " + kernel;
+            strCmdText = "/K python ../../../Data/Scripts/sobel_convolve.py --image ../../../Data/test.jpg -o ../../../Data/test2.jpg --sobel " + sobel;
             System.Diagnostics.Process process = new System.Diagnostics.Process();
             process.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
             process.StartInfo.FileName = "CMD.exe";
+            process.StartInfo.RedirectStandardInput = true;
             process.StartInfo.Arguments = strCmdText;
             process.Start();
+            process.StandardInput.WriteLine("exit");
+            process.StandardInput.Flush();
+            process.StandardInput.Close();
             process.WaitForExit();
+            process.Close();
             while (true)
             {
                 if (File.Exists("../../../Data/test2.jpg"))
@@ -158,6 +165,14 @@ namespace App_GIIS
                 }
             }
             label2.Visible = true;
+        }
+        private void radioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton radioButton = (RadioButton)sender;
+            if (radioButton.Checked)
+            {
+                sobel = radioButton.Text;
+            }
         }
     }
 }
